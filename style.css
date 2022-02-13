@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(63, 63, 63);
+}
+
+.main-container{
+    height: 50vh;
+    width: 30vw;
+    min-width: 50vw;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 2vh 2vh;
+    overflow-y: scroll;
+    border-radius: 2vh;
+}
+
+.main-container::-webkit-scrollbar{
+    appearance: none;
+    width: 0;
+}
+
+#search-items{
+    display: flex;
+    width:50vw;
+    height: 7vh;
+    font-size: 3vh;
+    padding: 0 1vw;
+    margin: auto;
+    margin-top: 17vh;
+    border-radius: 2vh;
+    border: none;
+}
+
+#add-items{
+    display: flex;
+    width:50vw;
+    position:relative;
+    height: 7vh;
+    font-size: 3vh;
+    padding: 0 1vw;
+    margin: auto;
+    margin-top: 52vh;
+    border-radius: 2vh;
+    border: none;
+}
+
+.main-list{
+    list-style: none;
+    /* margin: 2vh 0 0 0; */
+    position: relative;
+    margin: 0;
+    top: 0;
+}
+
+.list-item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 1vw;
+    margin: 1.5vh 0 0 0;
+    height: 12vh;
+    background-color: rgb(57, 167, 161);
+    /* border: 1vh solid rgb(41, 41, 88); */
+    border-radius: 2vh;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.list-item-text{
+    font-size: 4vh;
+}
+
+.delete-button{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background-color: rgb(117, 51, 114);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.filter-class{
+    display: none !important;
+}
